@@ -121,7 +121,7 @@ $("#cancion").text(xtit);
 
 // API ZENO FM
 if (plataforma === "zeno") {
-$.getJSON ("https://twj.es/radio_info/?radio_url=https://stream.zeno.fm/pcsxei1d3h0tv"+server+"?ra="+Math.random(), function(data){
+$.getJSON ("https://api.zeno.fm/mounts/metadata/subscribe/pcsxei1d3h0tv"+server+"?ra="+Math.random(), function(data){
 xtit = data.title;
 myArray = xtit.split("-");
 portadax(myArray[0]);
