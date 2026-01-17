@@ -121,7 +121,7 @@ $("#cancion").text(xtit);
 
 // API ZENO FM
 if (plataforma === "zeno") {
-$.getJSON ("https://zenoplay.zenomedia.com/api/zenofm/nowplaying/pcsxei1d3h0tv"+server+"?ra="+Math.random(), function(data){
+$.getJSON ("https://zenoplay.zenomedia.com/api/zenofm/nowplaying"+server+"?ra="+Math.random(), function(data){
 xtit = data.title;
 myArray = xtit.split("-");
 portadax(myArray[0]);
