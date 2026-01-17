@@ -32,8 +32,8 @@ input[type=range]::-webkit-slider-thumb {box-shadow:0px 0px 0px #ffffff, 0px 0px
 
 <!-- Configuracion Radial -->
 <script>
-stream = "https://stream.zeno.fm/xv084ye33mruv"; 
-server = "xv084ye33mruv"; 
+stream = "https://stream.zeno.fm/pcsxei1d3h0tv"; 
+server = "pcsxei1d3h0tv"; 
 plataforma = "zeno";
 </script>
 
@@ -41,7 +41,7 @@ plataforma = "zeno";
 
 <!-- Reproductor Html -->
 <div id="player">
-<div id="radio"><img class="meta-img" src="https://i.imgur.com/hGpn7Gh.png" id="portada"/>
+<div id="radio"><img class="meta-img" src="https://i.imgur.com/flqCmC0.png" id="portada"/>
 <div class="play-pause">
 <span id="plax" class="fa fa-play" onclick="togglePlay()"></span>
 </div>
@@ -75,7 +75,7 @@ document.getElementById("volume").oninput = function() {
 audio.volume = intToDecimal(this.value)
 }
 
-audio.onerror = function(){alert("Radio sin señal o falta de pago")}
+audio.onerror = function(){alert("Estamos Trabajando para Volver")}
 </script>
 
 
@@ -121,7 +121,7 @@ $("#cancion").text(xtit);
 
 // API ZENO FM
 if (plataforma === "zeno") {
-$.getJSON ("https://host.chapinradios.com/archivos/api.php?url=https://zenoplay.zenomedia.com/api/zenofm/nowplaying/"+server+"?ra="+Math.random(), function(data){
+$.getJSON ("https://zenoplay.zenomedia.com/api/zenofm/nowplaying/pcsxei1d3h0tv"+server+"?ra="+Math.random(), function(data){
 xtit = data.title;
 myArray = xtit.split("-");
 portadax(myArray[0]);
